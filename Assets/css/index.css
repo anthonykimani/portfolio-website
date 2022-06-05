@@ -219,3 +219,33 @@
     background-color:#00b4d8;
     color:white;
 }
+
+.contact-container{
+    display:grid;
+    justify-content:center;
+}
+
+.contacts form{
+    display:grid;
+    width:700px;
+}
+
+.contacts form input{
+    height:50px;
+    margin-top:10px;
+}
+
+.footer-container{
+    display:grid;
+    justify-content:center;
+    background-color: #023e8a;
+    height:300px;
+    color:white;
+    text-align:center;
+}
+
+.footer-container h2{
+    font-size:32px;
+    font-family:"Poppins"
+}
+
