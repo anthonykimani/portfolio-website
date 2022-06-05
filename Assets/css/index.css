@@ -1,0 +1,51 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:"Actor";
+}
+    /* PAGE-CONTAINER */
+.page-container{
+    margin-left:5px;
+    margin-right:5px;
+}
+    /* NAVIGATION-SECTION */
+.navigation-position{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100;
+}
+
+.navigation-container{
+    display:flex;
+    justify-content:space-between;
+    background-color:white;
+}
+
+.navigation-logo h3{
+    font-size:20px;
+    padding:20px;
+    color:#023e8a;
+}
+
+.navigation-container nav ul{
+    display:flex;
+}
+
+.navigation-container nav ul li{
+    padding:20px;
+    font-weight:800;
+    font-size:20px;
+    list-style:none;
+}
+
+.navigation-container nav ul li a{
+    text-decoration:none;
+    color:#023e8a;
+}
+
+.nav-toggle-button{
+    display:none;
+}
+
