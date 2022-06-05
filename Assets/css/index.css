@@ -42,10 +42,54 @@
 
 .navigation-container nav ul li a{
     text-decoration:none;
-    color:#023e8a;
+    color:#00b4d8;
 }
 
 .nav-toggle-button{
     display:none;
 }
 
+    /* HOME SECTION */
+
+.background-video{
+    filter: brightness(50%);
+}
+
+.home{
+    position:relative;
+    top:-400px;
+    display:grid;
+    align-content:space-around;
+    width:50vw;
+    padding-left:2em;
+    height:55vh;
+    color:white;
+}
+
+.home h1{
+    font-size:58px;
+    font-weight:1500;
+}
+
+.home h1 span{
+    color:#00b4d8;
+}
+
+.home h2{
+    font-size:28px;
+}
+
+.contact-button{
+    width:120px;
+    height:40px;
+    color:white;
+    background:transparent;
+    border:1px solid white;
+    font-size:20px;
+    font-weight:800;
+}
+
+.contact-button:hover{
+    background-color:white;
+    color:black;
+}
