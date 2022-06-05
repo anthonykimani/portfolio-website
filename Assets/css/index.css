@@ -21,6 +21,7 @@
     display:flex;
     justify-content:space-between;
     background-color:white;
+    border-bottom:1px solid #c4c4c4;
 }
 
 .navigation-logo h3{
@@ -55,11 +56,17 @@
     filter: brightness(50%);
 }
 
+.home-container{
+    border:1px solid red;
+    height:110vh;
+}
+
 .home{
     position:relative;
     top:-400px;
     display:grid;
     align-content:space-around;
+    border:1px solid red;
     width:50vw;
     padding-left:2em;
     height:55vh;
@@ -93,3 +100,49 @@
     background-color:white;
     color:black;
 }
+
+.about-container{
+    display:grid;
+    justify-content:center;
+}
+
+.about-container > h1{
+
+}
+
+.about-subcontainer{
+    display:flex;
+    justify-content: space-around;
+}
+
+#about-img{
+    border-radius:0 0 50% 50%;
+    z-index:100;
+}
+
+
+.about-text{
+    display:grid;
+    align-content:space-around;
+    width:50%;
+}
+
+.about-text h3{
+    font-size:30px;
+    font-weight:200;
+}
+
+.about-text h4{
+    font-size:25px;
+    font-weight:200;
+}
+
+.about-text h5{
+    font-size:23px;
+    font-weight:200;
+}
+
+.about-text span{
+    color:#00b4d8;
+}
+
