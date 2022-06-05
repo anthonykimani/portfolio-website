@@ -1,7 +1,7 @@
 *{
     padding:0;
     margin:0;
-    font-family:"Actor";
+    font-family:"Poppins";
 }
     /* PAGE-CONTAINER */
 .page-container{
@@ -54,10 +54,10 @@
 
 .background-video{
     filter: brightness(50%);
+    width:100%;
 }
 
 .home-container{
-    border:1px solid red;
     height:110vh;
 }
 
@@ -66,8 +66,7 @@
     top:-400px;
     display:grid;
     align-content:space-around;
-    border:1px solid red;
-    width:50vw;
+    width:50%;
     padding-left:2em;
     height:55vh;
     color:white;
@@ -75,15 +74,18 @@
 
 .home h1{
     font-size:58px;
+    font-family:"Poppins";
     font-weight:1500;
 }
 
 .home h1 span{
     color:#00b4d8;
+    font-family:"Poppins";
 }
 
 .home h2{
     font-size:28px;
+    font-family:"Poppins";
 }
 
 .contact-button{
@@ -104,10 +106,11 @@
 .about-container{
     display:grid;
     justify-content:center;
+    text-align:center;
 }
 
-.about-container > h1{
-
+.about-container h2{
+    color:#00b4d8;
 }
 
 .about-subcontainer{
@@ -125,6 +128,7 @@
     display:grid;
     align-content:space-around;
     width:50%;
+    text-align:start;
 }
 
 .about-text h3{
@@ -146,29 +150,38 @@
     color:#00b4d8;
 }
 
+.skills-container{
+    text-align:center;
+}
+
+.skills-container h2{
+    color:#00b4d8;
+    padding:20px;
+}
+
 .skills-subcontainer{
     display:flex;
     justify-content:space-around;
 }
 
 .skills-image img{
-    width:500px;
+    max-width:500px;
+    width:100%;
 }
 
 .skill-bars{
-    border:1px solid red;
     width:600px;
     display: grid;
     justify-content:center;
 }
 
 .skill{
-    border:1px solid red;
     width:500px;
 }
 
 .skill progress{
-    width:500px;
+    max-width:500px;
+    width:100%;
     height:50px;
 }
 
@@ -178,24 +191,33 @@
 }
 
 .project-container{
+    text-align:center;
+}
 
+.project-container h2{
+    color:#00b4d8;
+    padding:20px;
 }
 
 .projects{
     display:grid;
     grid-template-columns:repeat(2 , 1fr);
+    justify-content:center;
     row-gap:20px;
 }
 
 .project-card{
-    width:600px;
+    max-width:500px;
+    width:100%;
     display:grid;
     border:1px solid #c4c4c4;
-    height:500px;
+    height:520px;
+    text-align:start;
 }
 
 .project-card img{
-    width:600px;
+    max-width:500px;
+    width:100%;
 }
 
 .project-card p{
@@ -205,6 +227,7 @@
 }
 
 .project-card a{
+    margin:10px;
     padding:10px;
     width:100px;
     height:20px;
@@ -223,6 +246,12 @@
 .contact-container{
     display:grid;
     justify-content:center;
+    text-align:center;
+}
+
+.contact-container > h2{
+    padding:20px;
+    color:#00b4d8;
 }
 
 .contacts form{
@@ -249,3 +278,61 @@
     font-family:"Poppins"
 }
 
+
+@media(max-width:1000px){
+    .home{
+        width:70%;
+    }
+
+    .home h1{
+        font-size:42px;
+    }
+
+    .home h2{
+        font-size:24px;
+    }
+
+    .projects{
+        grid-template-columns:repeat(1 , 1fr);
+        row-gap:20px;
+    }
+
+    .project-card{
+        max-width:1000px;
+        width:100%;
+        height:auto;
+    }
+
+    .project-card img{
+        max-width:1000px;
+        width:100%;
+    }
+}
+
+@media(max-width:900px){
+    .background-video{
+        width:900px;
+        height:500px;
+        overflow:hidden;
+    }
+
+    .home-container{
+        overflow:hidden;
+    }
+
+    .about-text h3{
+        font-size:20px;
+    }
+
+    .about-text h4{
+        font-size:18px;
+    }
+
+    .about-text h5{
+        font-size:16px;
+    }
+
+    .skill progress{
+        width:400px;
+    }
+}
