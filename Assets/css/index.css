@@ -22,6 +22,7 @@
     justify-content:space-between;
     background-color:white;
     border-bottom:1px solid #c4c4c4;
+    width:100%;
 }
 
 .navigation-logo h3{
@@ -165,7 +166,6 @@
 }
 
 .skills-image img{
-    max-width:500px;
     width:100%;
 }
 
@@ -256,7 +256,8 @@
 
 .contacts form{
     display:grid;
-    width:700px;
+    width:100%;
+
 }
 
 .contacts form input{
@@ -316,6 +317,11 @@
         overflow:hidden;
     }
 
+    .home{
+        align-content: space-between;
+        height:70vh;
+    }
+
     .home-container{
         overflow:hidden;
     }
@@ -334,5 +340,84 @@
 
     .skill progress{
         width:400px;
+    }
+}
+
+@media(max-width:768px){
+    .navigation-container nav{
+        display:none;
+    }
+
+    .nav-toggle-button{
+        display:block;
+    }
+    .about-subcontainer{
+        display:grid;
+        align-content:center;
+    }
+
+    .about-text{
+        max-width:700px;
+        width:100%;
+    }
+
+    .about-text h3{
+        padding:10px;
+    }
+
+    .about-text h4{
+        padding:10px;
+    }
+
+    .about-text h5{
+        padding:10px;
+    }
+
+    .skills-subcontainer{
+        display:grid;
+        width:100%;
+    }
+
+    .skills-image{
+        display:inline-block;
+        max-width:500px;
+        width:100%;
+    }
+
+    .skills-image img{
+        max-width:500px;
+        width:100%;
+    }
+
+    .contacts form{
+        width:100%
+    }
+
+}
+
+@media(max-width:648px){
+    .home h1{
+        font-size:28px;
+    }
+
+    .home h2{
+        font-size:20px;
+    }
+    .navigation-container{
+
+    }
+}
+
+@media(max-width:512px){
+
+}
+
+@media(max-width:440px){
+    .home h1{
+        font-size:24px;
+    }
+
+    .home h2{
+        font-size:16px;
     }
 }
