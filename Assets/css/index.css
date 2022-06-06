@@ -44,6 +44,15 @@
 .navigation-container nav ul li a{
     text-decoration:none;
     color:#00b4d8;
+    padding:5px 10px;
+    border:1px solid transparent;
+}
+
+.navigation-container nav ul li a:hover{
+    border:1px solid #00b4d8;
+    background-color: #00b4d8;
+    color:white;
+    padding:5px 10px;
 }
 
 .nav-toggle-button{
