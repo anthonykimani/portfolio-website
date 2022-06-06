@@ -19,7 +19,7 @@
                 <div class="navigation-logo">
                     <h3>Kimani</h3>
                 </div>
-                <nav>
+                <nav class="nav-menu-desktop">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
@@ -29,16 +29,30 @@
                     </ul>
                 </nav>
                 <div class="nav-toggle-button">
-                    <button>
-                        nav
+                    <button class="nav-button">
+                        <i class='bx bx-menu bx-md'></i>
                     </button>
                 </div>
             </section>
+            <div class="nav-menu-mobile " >
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <!-- HOME-SECTION -->
         <section class="home-container">
                 <video autoplay loop muted plays-inline class="background-video">
                     <source src="./Assets/videos/Untitled.mp4" type="video/mp4">
+                </video>
+                <video autoplay loop muted plays-inline class="background-video-mobile">
+                    <source src="./Assets/videos/backround-mobile.mp4" type="video/mp4">
                 </video>
             <div class="home">   
                 <h1>Hi, I'm <span>Antony Kimani</span> Software Developer<span>.</span></h1>
@@ -154,5 +168,6 @@
             <h3>&copy; all rights reserved 2022</h3>
         </section>
     </div>
+    <script src="./Assets/js/index.js"></script>
 </body>
 </html>
