@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Actor&family=Poppins&display=swap" rel="stylesheet"><!--google fonts-->
     <link rel="stylesheet" href="./Assets/css/index.css"><!--css file-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Personal Website</title>
 </head>
 <body>
@@ -32,10 +33,10 @@
                     <nav>
                         <ul>
                             <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Skills</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="#" class="aboutscroll">About</a></li>
+                            <li><a href="#" class="skillsscroll">Skills</a></li>
+                            <li><a href="#" class="projectscroll">Projects</a></li>
+                            <li><a href="#" class="contactscroll">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -57,10 +58,10 @@
                     <source src="./Assets/videos/backround-mobile.mp4" type="video/mp4">
                 </video>
             <div class="home">   
-                <h1>Hi, I'm <span>Antony Kimani</span> Software Developer<span>.</span></h1>
-                <h2>Here I showcase Designs, Projects and Web Applications</h2>
-                <button class="contact-button">Contact Me</button>
-                <div class="social-links-container">
+                <h1 data-aos="fade-up" data-aos-delay="150">Hi, I'm <span>Antony Kimani</span> Software Developer<span>.</span></h1>
+                <h2 data-aos="fade-up" data-aos-delay="300">Here I showcase Designs, Projects and Web Applications</h2>
+                <button class="contact-button" data-aos="fade-up" data-aos-delay="450">Contact Me</button>
+                <div class="social-links-container" data-aos="fade-up" data-aos-delay="600">
                     <a href=""><i class = "bx bxl-github bx-lg"></i></a>
                     <a href=""><i class = "bx bxl-twitter"></i></a>
                     <a href=""><i class = "bx bxl-linkedin"></i></a>
@@ -76,11 +77,11 @@
                     <img src="./Assets/images/kimani.png" alt="" id="about-img">
                 </div>
                 <div class="about-text">
-                    <h3>I'm Antony Kimani, a <span>software developer </span> student at <span>Moringa School</span> passionate about building the next generation of technology. </h3>
+                    <h4>I'm Antony Kimani, a <span>software developer </span> student at <span>Moringa School</span> passionate about building the next generation of technology. </h4>
                     <hr>
-                    <h4>I build Web Application in HTML,CSS,JAVASCRIPT and RUBY. I have skills in REACT and using RAILS.</h4>
+                    <h4>I build Web Applications in <span>HTML, CSS, JAVASCRIPT</span> and <span>RUBY</span>. I have skills in REACT and using RAILS.</h4>
                     <hr>
-                    <h5>I would love to work with you on your next Project . Share some thoughts?</h5>
+                    <h4>I would love to work with you on your next Project . Share some thoughts?</h4>
                 </div>
             </div>
         </section>
@@ -175,5 +176,9 @@
         </section>
     </div>
     <script src="./Assets/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({duration:900,});
+      </script>
 </body>
 </html>

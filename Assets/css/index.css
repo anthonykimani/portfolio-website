@@ -141,6 +141,7 @@
     display:grid;
     justify-content:center;
     text-align:center;
+    background-color:#f4f4f4;
 }
 
 .about-container h2{
@@ -167,12 +168,16 @@
 
 .about-text h3{
     font-size:30px;
-    font-weight:200;
+    font-weight:300;
 }
 
 .about-text h4{
     font-size:25px;
-    font-weight:200;
+    font-weight:400;
+}
+
+.about-text h4 span{
+    font-weight:700;
 }
 
 .about-text h5{
